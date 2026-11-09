@@ -1,0 +1,49 @@
+# ---- Secrets / environment ----
+.env
+.env.*
+!.env.example
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+
+# ---- Python bytecode / caches ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ---- Test / tooling caches ----
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---- Generated vector stores / indexes ----
+.chroma/
+chroma/
+vectorstore/
+vector_store/
+vector_store_v2/
+vector_store_backup/
+vector_store*/
+*.faiss
+*.index
+
+# ---- Generated evaluation reports (keep the dataset + the dir placeholder) ----
+evaluation/reports/*
+!evaluation/reports/.gitkeep
+
+# ---- Logs ----
+*.log
+logs/
+
+# ---- Editor / OS ----
+.DS_Store
+.idea/
+.vscode/
