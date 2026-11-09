@@ -1,0 +1,13 @@
+# Internal Policy Q&A Service — direct runtime dependencies.
+# Versions are pinned for Python 3.12 and verified to install and run together
+# in the project virtual environment.
+
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+pydantic==2.10.3
+pydantic-settings==2.6.1
+python-dotenv==1.0.1
+
+# LLM answer generation (Milestone 4). Groq Python SDK; pulls in httpx. The
+# GROQ_API_KEY is read from the environment at runtime — it is never committed.
+groq==1.7.0

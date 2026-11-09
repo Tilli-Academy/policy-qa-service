@@ -1,0 +1,12 @@
+# Machine-learning / embedding dependencies (Milestone 3).
+# HEAVY and optional at runtime: install deliberately and separately from the
+# core service. `fastembed` pulls in `onnxruntime` and `tokenizers`, and on first
+# use downloads the ONNX model `Qdrant/all-MiniLM-L6-v2-onnx` (~90 MB) from the
+# Hugging Face Hub. The core API and all unit tests (which use a fake embedder)
+# do NOT require this file.
+#
+# Install with:  pip install -r requirements-ml.txt
+-r requirements.txt
+
+numpy==1.26.4
+fastembed==0.4.2
